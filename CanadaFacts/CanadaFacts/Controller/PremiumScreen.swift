@@ -1,16 +1,16 @@
 //
-//  FactScreen.swift
+//  PremiumScreen.swift
 //  CanadaFacts
 //
-//  Created by Mel and Sand on 2017-11-01.
+//  Created by Mel and Sand on 2017-12-01.
 //  Copyright © 2017 Moshi Media. All rights reserved.
 //
 
 import UIKit
 
-var factsSeen = 0 
 
-class FactsScreen: UIViewController {
+
+class PremiumScreen: UIViewController {
     
     @IBOutlet weak var factLbl: UILabel!
     @IBOutlet weak var maxLbl: UILabel!
@@ -47,15 +47,8 @@ class FactsScreen: UIViewController {
                 storeDate()
             }
         }
-        
-        
-        
     }
     
-    @IBAction func goPremiumPressed(_ sender: Any) {
-        
-        //ADD PREMIUM FEATURE HERE
-    }
     override func viewDidAppear(_ animated: Bool) {
         
         factsSeen += 1
@@ -69,12 +62,12 @@ class FactsScreen: UIViewController {
         }
         
         
-//        if factsSeen == 2 {
-//            performSegue(withIdentifier: ".........", sender: self)
-//        }
-//        if factsSeen > 2 {
-//            performSegue(withIdentifier: ".........", sender: self)
-//        }     //FILL IN LATER ON WHERE YOU WANT THE VIEW TO GO.
+        //        if factsSeen == 2 {
+        //            performSegue(withIdentifier: ".........", sender: self)
+        //        }
+        //        if factsSeen > 2 {
+        //            performSegue(withIdentifier: ".........", sender: self)
+        //        }     //FILL IN LATER ON WHERE YOU WANT THE VIEW TO GO.
     }
     
     
@@ -91,41 +84,7 @@ class FactsScreen: UIViewController {
         
     }
     
-
-}
-
-func storeFactsSeen() {
-    UserDefaults.standard.set(factsSeen, forKey: "numberOfFactsSeen")
-}
-
-
-
-func storeDate() {
-    
-    let date = NSDate()
-    let calendar = NSCalendar.current
-    let components = calendar.dateComponents([.day, .month, .year], from: date as Date)
-    
-    let todaysDate = "\(components.year!)-\(components.month!)-\(components.day!)"
-    
-    print(todaysDate)
-    
-    UserDefaults.standard.set(todaysDate, forKey: "lastSavedDate")
-    
-    print("Save date function has been ran!")
-}
-
-func checkTodaysDate() -> String {
-    
-    let date = NSDate()
-    let calendar = NSCalendar.current
-    let components = calendar.dateComponents([.day, .month, .year], from: date as Date)
-    
-    let todaysDate = "\(components.year!)-\(components.month!)-\(components.day!)"
-    
-    print("today's date is \(todaysDate)")
-    
-    return todaysDate
-    
+    @IBOutlet weak var goPremPressed: UIButton!
+    //ADD PREMIUM FEATURE HERE!
 }
 

@@ -13,27 +13,52 @@ import GameKit
 
 class HomeScreen: UIViewController {
     
+    var timer = Timer()
+    var randomNumber = randomNum()
+    
     @IBOutlet weak var icon: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let randomNumber = randomNum()
+        //Premium stuff:
+        let paid = Bundle.main.object(forInfoDictionaryKey: "Paid")
+        if (paid != nil) {
+            //WRITE SPECIAL PREMIUM CODE HERE
+        }
+        
+        
         let iconName = "canada-\(randomNumber)"
         print(iconName)
         
-        icon.image = UIImage(named: "iconName")
+        icon.image = UIImage(named: "\(iconName)")
         
-        
-        
-        
+        scheduledTimerWithTimeInterval()
 
     }
     
-    
-    override func viewDidAppear(_ animated: Bool) {
+    func scheduledTimerWithTimeInterval(){
+        // Scheduling timer to Call the function "updateIcon" with the interval of 2 seconds
+        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(self.updateIcon), userInfo: nil, repeats: true)
     }
     
+    
+    @objc func updateIcon(){
+
+        
+        if randomNumber < 12 {
+            randomNumber += 1
+        } else {
+            randomNumber = 0
+        }
+        
+        let iconName = "canada-\(randomNumber)"
+        print(iconName)
+        
+        icon.image = UIImage(named: "\(iconName)")
+   
+        
+    }
     
 }
 

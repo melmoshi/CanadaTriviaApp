@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oh Canada!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msh-cs-Fbd">
-                                <rect key="frame" x="-5.5" y="64" width="315" height="190"/>
+                                <rect key="frame" x="-5.5" y="49" width="315" height="190"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="315" id="CbT-Qc-KYh"/>
                                     <constraint firstAttribute="height" constant="190" id="GTg-sn-Prv"/>
@@ -57,7 +57,7 @@
                                     <constraint firstAttribute="width" constant="150" id="ZqF-kj-qDo"/>
                                     <constraint firstAttribute="height" constant="40" id="ijk-YB-h1W"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="OldSansBlack" family="OldSansBlack" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
                                 <state key="normal" title="Start!">
                                     <color key="titleColor" red="0.78823529410000004" green="0.1215686275" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FACT OF THE DAY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-vH-Cx1">
-                                <rect key="frame" x="49.5" y="226" width="270.5" height="40"/>
+                                <rect key="frame" x="49" y="211" width="270.5" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="o0y-fc-uTu"/>
                                 </constraints>
@@ -75,27 +75,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QA5-rx-8ZZ" customClass="CSAnimationView">
-                                <rect key="frame" x="40" y="325" width="240" height="128"/>
+                                <rect key="frame" x="70" y="251" width="180" height="222"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="taco" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-Vo-0fb">
-                                        <rect key="frame" x="70" y="14" width="100" height="100"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="canada-8" translatesAutoresizingMaskIntoConstraints="NO" id="MqS-Vo-0fb">
+                                        <rect key="frame" x="10" y="31.5" width="160" height="160"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="YYt-xl-Wng"/>
-                                            <constraint firstAttribute="height" constant="100" id="f4O-FB-HNx"/>
+                                            <constraint firstAttribute="width" constant="160" id="YYt-xl-Wng"/>
+                                            <constraint firstAttribute="height" constant="160" id="f4O-FB-HNx"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="HHq-Fx-e2h"/>
-                                    <constraint firstAttribute="width" constant="240" id="Qfh-Ub-BNL"/>
+                                    <constraint firstAttribute="width" constant="180" id="A7f-Oo-7pS"/>
                                     <constraint firstItem="MqS-Vo-0fb" firstAttribute="centerY" secondItem="QA5-rx-8ZZ" secondAttribute="centerY" id="Sm9-ci-EEa"/>
                                     <constraint firstItem="MqS-Vo-0fb" firstAttribute="centerX" secondItem="QA5-rx-8ZZ" secondAttribute="centerX" id="qZ6-aP-ccA"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="type" value="pop"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="duration">
-                                        <integer key="value" value="5"/>
+                                        <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="delay">
                                         <integer key="value" value="0"/>
@@ -109,14 +108,15 @@
                             <constraint firstItem="iBA-OM-0om" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9fW-ra-Gnd"/>
                             <constraint firstItem="iBA-OM-0om" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FhW-i2-bsC"/>
                             <constraint firstItem="vGZ-vH-Cx1" firstAttribute="top" secondItem="msh-cs-Fbd" secondAttribute="bottom" constant="-28" id="L2d-yD-Ehe"/>
-                            <constraint firstItem="msh-cs-Fbd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-125" id="aw4-sl-Jaw"/>
+                            <constraint firstItem="ITJ-6m-bfU" firstAttribute="top" secondItem="QA5-rx-8ZZ" secondAttribute="bottom" id="Znd-J5-2Y6"/>
+                            <constraint firstItem="msh-cs-Fbd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-140" id="aw4-sl-Jaw"/>
                             <constraint firstItem="iBA-OM-0om" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f35-pr-mO0"/>
                             <constraint firstItem="iBA-OM-0om" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="l71-J1-PVa"/>
                             <constraint firstItem="QA5-rx-8ZZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lXr-FG-IHA"/>
                             <constraint firstItem="ITJ-6m-bfU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s37-MA-Hf9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITJ-6m-bfU" secondAttribute="bottom" constant="55" id="sd0-q7-MJh"/>
+                            <constraint firstItem="QA5-rx-8ZZ" firstAttribute="top" secondItem="vGZ-vH-Cx1" secondAttribute="bottom" id="srE-2K-ldd"/>
                             <constraint firstItem="vGZ-vH-Cx1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="24" id="xap-6V-zXP"/>
-                            <constraint firstItem="QA5-rx-8ZZ" firstAttribute="top" secondItem="vGZ-vH-Cx1" secondAttribute="bottom" constant="59" id="ymc-IQ-4Ny"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -126,7 +126,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="108.75" y="133.09859154929578"/>
+            <point key="canvasLocation" x="24" y="-297"/>
         </scene>
         <!--Facts Screen-->
         <scene sceneID="74g-PZ-abX">
@@ -140,7 +140,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lake Superior has more water than all the other great lakes combined!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gE4-oa-afY">
-                                <rect key="frame" x="60.5" y="201" width="200" height="99.5"/>
+                                <rect key="frame" x="60" y="201" width="200" height="99.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="QsT-qD-t5i"/>
                                 </constraints>
@@ -181,13 +181,17 @@
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyx-cM-LWV">
                                 <rect key="frame" x="85" y="429" width="150" height="33"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="NOx-b2-N3g"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Go Premium">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="goPremiumPressed:" destination="xRL-Dp-DHM" eventType="touchUpInside" id="R7S-Cs-7QM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78823529410000004" green="0.1215686275" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
@@ -212,8 +216,7 @@
                     <connections>
                         <outlet property="bonusBtn" destination="6d5-9A-gmF" id="d9J-Lt-vJl"/>
                         <outlet property="factLbl" destination="gE4-oa-afY" id="lAx-v1-E8d"/>
-                        <outlet property="goPremLbl" destination="yyx-cM-LWV" id="dl5-PI-NPA"/>
-                        <outlet property="goPremPressed" destination="yyx-cM-LWV" id="BDi-Z8-7ws"/>
+                        <outlet property="goPremLbl" destination="yyx-cM-LWV" id="fcz-XE-VC0"/>
                         <outlet property="maxLbl" destination="qdS-v5-6kX" id="Yxd-S2-UQN"/>
                     </connections>
                 </viewController>
@@ -243,9 +246,124 @@
             </objects>
             <point key="canvasLocation" x="999" y="133"/>
         </scene>
+        <!--Premium Screen-->
+        <scene sceneID="gVb-fQ-Q24">
+            <objects>
+                <viewController id="lM4-88-Rce" customClass="PremiumScreen" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BZs-ld-6zk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Playing with Reds" translatesAutoresizingMaskIntoConstraints="NO" id="3Ci-1W-I8A">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lake Superior has more water than all the other great lakes combined!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGI-Gk-YcG">
+                                <rect key="frame" x="60" y="201" width="200" height="99.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="OWs-Pl-4zD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddc-Dh-8eM">
+                                <rect key="frame" x="85" y="366.5" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="9KE-ml-Rd5"/>
+                                    <constraint firstAttribute="width" constant="150" id="g6L-1L-Fxc"/>
+                                </constraints>
+                                <state key="normal" title="Bonus Fact!">
+                                    <color key="titleColor" red="0.78823529410000004" green="0.1215686275" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="anotherOneBtnPressed:" destination="lM4-88-Rce" eventType="touchUpInside" id="wFV-hk-qRk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did You Know?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ph-9k-MMm">
+                                <rect key="frame" x="81.5" y="120" width="157" height="31"/>
+                                <fontDescription key="fontDescription" name="KannadaSangamMN-Bold" family="Kannada Sangam MN" pointSize="24"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've reached your maximum facts for today! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sF-hx-7di">
+                                <rect key="frame" x="15" y="351.5" width="290" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Ys3-aK-53n"/>
+                                    <constraint firstAttribute="width" constant="290" id="laM-4e-YOV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrA-SO-oFM">
+                                <rect key="frame" x="85" y="429" width="150" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="3z3-v7-qe8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Go Premium">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78823529410000004" green="0.1215686275" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="GrA-SO-oFM" firstAttribute="top" secondItem="9sF-hx-7di" secondAttribute="bottom" constant="7.5" id="4A1-Xb-CcA"/>
+                            <constraint firstItem="fGI-Gk-YcG" firstAttribute="centerX" secondItem="BZs-ld-6zk" secondAttribute="centerX" id="4TS-HN-uHj"/>
+                            <constraint firstItem="3Ci-1W-I8A" firstAttribute="leading" secondItem="Pnb-wd-kgY" secondAttribute="leading" id="5BW-19-hVH"/>
+                            <constraint firstItem="9sF-hx-7di" firstAttribute="centerY" secondItem="ddc-Dh-8eM" secondAttribute="centerY" id="JFb-Au-CSN"/>
+                            <constraint firstItem="9sF-hx-7di" firstAttribute="centerX" secondItem="ddc-Dh-8eM" secondAttribute="centerX" id="Mas-lt-Vyd"/>
+                            <constraint firstItem="fGI-Gk-YcG" firstAttribute="top" secondItem="8ph-9k-MMm" secondAttribute="bottom" constant="50" id="SEg-yf-OAB"/>
+                            <constraint firstItem="8ph-9k-MMm" firstAttribute="top" secondItem="Pnb-wd-kgY" secondAttribute="top" constant="100" id="Xwf-Gp-YKU"/>
+                            <constraint firstItem="3Ci-1W-I8A" firstAttribute="top" secondItem="BZs-ld-6zk" secondAttribute="top" id="YwY-1J-Ivi"/>
+                            <constraint firstItem="GrA-SO-oFM" firstAttribute="centerX" secondItem="BZs-ld-6zk" secondAttribute="centerX" id="dHL-yB-tRS"/>
+                            <constraint firstItem="ddc-Dh-8eM" firstAttribute="centerX" secondItem="BZs-ld-6zk" secondAttribute="centerX" id="iUP-q8-X8j"/>
+                            <constraint firstItem="3Ci-1W-I8A" firstAttribute="trailing" secondItem="Pnb-wd-kgY" secondAttribute="trailing" id="lut-rE-ZcK"/>
+                            <constraint firstItem="ddc-Dh-8eM" firstAttribute="top" secondItem="fGI-Gk-YcG" secondAttribute="bottom" constant="66" id="sLw-na-hSd"/>
+                            <constraint firstItem="3Ci-1W-I8A" firstAttribute="bottom" secondItem="Pnb-wd-kgY" secondAttribute="bottom" id="xeE-Wi-ZvP"/>
+                            <constraint firstItem="8ph-9k-MMm" firstAttribute="centerX" secondItem="BZs-ld-6zk" secondAttribute="centerX" id="zMq-0z-uFK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Pnb-wd-kgY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bonusBtn" destination="ddc-Dh-8eM" id="oSK-pM-wEs"/>
+                        <outlet property="factLbl" destination="fGI-Gk-YcG" id="8Ho-7i-VPw"/>
+                        <outlet property="goPremLbl" destination="GrA-SO-oFM" id="puD-T6-ibT"/>
+                        <outlet property="goPremPressed" destination="GrA-SO-oFM" id="IvQ-w5-cDw"/>
+                        <outlet property="maxLbl" destination="9sF-hx-7di" id="A3K-wF-GZo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qv5-24-Mfu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="1Hv-P4-w4D">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've reached your maximum facts per day!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffh-OQ-IUH">
+                            <rect key="frame" x="20" y="20" width="200" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="OZa-5y-E7x"/>
+                                <constraint firstAttribute="height" constant="55" id="hlZ-DA-8JF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ffh-OQ-IUH" firstAttribute="centerX" secondItem="mWN-ar-azN" secondAttribute="centerX" id="RGz-Xv-3dP"/>
+                        <constraint firstItem="ffh-OQ-IUH" firstAttribute="top" secondItem="mWN-ar-azN" secondAttribute="top" constant="20" id="qRi-hi-m8a"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="mWN-ar-azN"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1500" y="-645"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Playing with Reds" width="1280" height="800"/>
-        <image name="taco" width="512" height="512"/>
+        <image name="canada-8" width="692" height="626"/>
     </resources>
 </document>
